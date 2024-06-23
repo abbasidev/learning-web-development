@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
+
+:root {
+  --color-primery-1: #fafafa;
+  --color-primery-2: #e0e0e0;
+  --color-primery-3: #252525;
+  --color-primery-4: #1c1c1c;
+  --color-primery-5: #141414; /* base */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Encode Sans", sans-serif;
+  background: var(--color-primery-4);
+  color: var(--color-primery-1);
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin: 2.4rem 2.4rem;
+
+  h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    list-style: none;
+
+    li {
+      a {
+        &:any-link {
+          display: flex;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 150%;
+          width: 70rem;
+          padding: 2rem;
+          border-radius: 1.6rem;
+          background: var(--color-primery-3);
+          color: var(--color-primery-2);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 520px) {
+  .main {
+    ul {
+      li {
+        a {
+          &:any-link {
+            width: 90vw;
+          }
+        }
+      }
+    }
+  }
+}
