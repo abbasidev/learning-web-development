@@ -1,2 +1,2 @@
-# learning
-[abbasidev.github.io/learning](https://abbasidev.github.io/learning/)
+# Learning Web Development
+[abbasidev.github.io/learning-web-development](https://abbasidev.github.io/learning-web-development/)
