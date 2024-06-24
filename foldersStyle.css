@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
 
+/* / */
+
 :root {
   --color-primery-1: #fafafa;
   --color-primery-2: #e0e0e0;
@@ -7,6 +9,8 @@
   --color-primery-4: #1c1c1c;
   --color-primery-5: #141414; /* base */
 }
+
+/* / */
 
 * {
   margin: 0;
@@ -31,6 +35,8 @@ body {
   min-height: 100dvh;
 }
 
+/* / */
+
 .main {
   display: flex;
   flex-direction: column;
@@ -44,6 +50,7 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    margin: 0 1.2rem;
   }
 
   ul {
@@ -53,9 +60,9 @@ body {
     list-style: none;
 
     li {
+      display: flex;
       a {
         &:any-link {
-          display: flex;
           font-size: 1.6rem;
           font-weight: 400;
           line-height: 150%;
@@ -70,9 +77,22 @@ body {
   }
 }
 
+/* / */
+
 @media (max-width: 780px) {
   html {
     font-size: 56%;
+  }
+  .main {
+    ul {
+      li {
+        a {
+          &:any-link {
+            width: 90vw;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -85,19 +105,5 @@ body {
 @media (max-width: 580px) {
   html {
     font-size: 44%;
-  }
-}
-
-@media (max-width: 520px) {
-  .main {
-    ul {
-      li {
-        a {
-          &:any-link {
-            width: 90vw;
-          }
-        }
-      }
-    }
   }
 }
