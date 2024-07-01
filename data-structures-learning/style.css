@@ -1,6 +1,5 @@
 :root {
   --color-primery-1: #fafafa;
-  --color-primery-2: #141e30;
-  --color-primery-3: #243b55;
-  --color-primery-4: rgba(250, 250, 250, 0.16);
+  --color-primery-2: #b91c1c; /* Red 700 */
+  --color-primery-3: rgba(250, 250, 250, 0.32);
 }
