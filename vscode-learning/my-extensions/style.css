@@ -1,3 +1,5 @@
+@import url(../style.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,11 @@ html {
 }
 
 body {
-  background: #fafafa;
+  background: linear-gradient(
+    90deg,
+    var(--color-primery-2) 0%,
+    var(--color-primery-3) 100%
+  );
 }
 
 main {
