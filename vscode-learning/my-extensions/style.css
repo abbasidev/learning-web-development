@@ -12,11 +12,7 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    90deg,
-    var(--color-primery-2) 0%,
-    var(--color-primery-3) 100%
-  );
+  background: var(--color-primery-2);
 }
 
 main {
